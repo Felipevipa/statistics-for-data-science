@@ -60,3 +60,9 @@ def comma_repeater(s: str, n: int) -> str:
 
 assert twice(comma_repeater, "type hints") == "type hints, type hints"
 # print(twice(repeater=Callable(),s = "Hola"))
+
+Number = int
+Numbers = List[Number]
+
+def total(xs: Numbers) -> Number:
+    return sum(xs)
